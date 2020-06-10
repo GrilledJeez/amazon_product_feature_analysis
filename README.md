@@ -2,11 +2,13 @@
 
 ## Abstract
 
-Challenge:
-
-A product manager needs a map of their customer's needs. Developing a new product or service requires knowing what features concern your customer’s attention. You also need to know your customer’s prioritization for these features. However, gaining feedback on a potential product becomes a challenge when you have nothing to put in front of a customer. I believe this challenge can be resolved by looking at real world feedback from reviews left on Amazon.
+Developing a new product or service requires knowing what features concern your customer’s attention. You also need to know your customer’s prioritization for these features. However, gaining feedback on a potential product becomes a challenge when you have nothing to put in front of a customer. I believe this challenge can be resolved by looking at real world feedback from reviews left on Amazon.
 
 Feature identification and prioritization will be helpful for product managers, aspiring entrepreneurs, marketing teams, business leaders, and even customers wanting better insight in comparing purchase options. The gained business intelligence could reshuffle a product development teams’ product development roadmap, product manager’s budget in developing certain features, and marketing’s narrative selling the product.
+
+Challenge:
+
+  - A product manager needs a map of their customer's needs. 
 
 Goal:
 
@@ -30,7 +32,7 @@ I selected the Panasonic 2.2 Cu. Ft. 1250 W/ Genius Sensor Countertop/Built-In M
 
 ![image](https://https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/panasonic_microwave.png)
 Panasonic Microwave
-
+   <br><br><br>
 
 ## Data
 
