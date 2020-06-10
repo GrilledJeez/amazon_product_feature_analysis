@@ -10,16 +10,16 @@ Feature identification and prioritization will be helpful for product managers, 
 
 Goal:
 
- - Use natural language processing to identify product features using Amazon reviews for a given product.
- - Prioritize the importance for these product features by calculating the relationship that each review has with each category.
+  - Use natural language processing to identify product features using Amazon reviews for a given product.
+  - Prioritize the importance for these product features by calculating the relationship that each review has with each category.
  
 
 ## Results
 
 
- - I implemented topic modeling on Amazon product reviews with Scikit Learn's Non-negative Matrix Factorization (NMF) to identify the features customers cared about most based on their feedback in Amazon reviews.
+  - I implemented topic modeling on Amazon product reviews with Scikit Learn's Non-negative Matrix Factorization (NMF) to identify the features customers cared about most based on their feedback in Amazon reviews.
 
- - I prioritized these features in relationship to one another to provide a hierarchy of importance for the identified product features. 
+  - I prioritized these features in relationship to one another to provide a hierarchy of importance for the identified product features. 
 
 
 ## Subject Matter
@@ -49,13 +49,13 @@ This data covers Amazon reviews from 1995-2015. The data is five years old at th
 
 I used GENSIM's NMF model and Coherence Score function to determine the best hyper-parameter combination and total topics to use. The final hyper-parameters I settled at after trialing multiple iterations was:
 
-- min_df = 2
-- max_df = .95
-- n_grams = 2
-- features = 3000
-- topics = 5
+ - min_df = 2
+ - max_df = .95
+ - n_grams = 2
+ - features = 3000
+ - topics = 5
 
-Some of th outputted coherence scores scored higher than these combinations. However, I went with these inplace of other combinations with higher scores as this combination provided the most inferences while holding the highest similarity amongst associated keywords within my different topics.
+Some of the outputted coherence scores scored higher than these combinations. However, I went with these inplace of other combinations with higher scores as this combination provided the most inferences while holding the highest similarity amongst associated keywords within my different topics.
 
 *insert coherence score graph here*
 
@@ -78,9 +78,9 @@ Upon completing my model I used softmax (a heuristic that converts arbitrary pos
 *insert prioritization summation for features selected*
 
 
-Additinally I performed some spot checks on randomly selected reviews to determine how my model was performing overall. There are clear examples where my model performs excellently and others where it performs poorly. 
+Additionally I performed some spot checks on randomly selected reviews to determine how my model was performing overall. There are clear examples where my model performs excellently and others where it performs poorly. 
 
-Below are two. In the first the customer is complaining about a malfunctioning door which was a common complaint as revealed by our model. In the second we see the review categorized in the 'Size' topic, but there is no mention of the size of the microwave. Addtionally in the second review we see the customer reference the lifetime and power of the microwave, but neither of these registered with the categorization. 
+Below are two. In the first the customer complained about a malfunctioning door which was a common complaint as revealed by our model. In the second we see the review categorized in the 'Size' topic, but there is no mention of the size of the microwave. Additionally in the second review we see the customer reference the lifetime and power of the microwave, but neither of these registered with the categorization. 
 
 *insert good performance slide here*
 
@@ -89,4 +89,4 @@ Below are two. In the first the customer is complaining about a malfunctioning d
 
 ## Future Work
 
-In the future I would like to integrate the star ratings for each of the reviews to provide more informative insights into the customer's relationship with the given product. Additionally I would like to implement GENSIM's NMF model to compare it's performance with Scikit-Learn's and to perhaps realize better results. Once I have determined the best pipeline for building my model, I would like to apply the same methodology on a dataset of app-reviews webscraped from Google's Playstore or Apple's Appstore. 
+In the future I would like to integrate the star ratings for each of the reviews to provide more informative insights into the customer's relationship with the given product. Additionally I would like to implement GENSIM's NMF model to compare its performance with Scikit-Learn's and to perhaps realize better results. Once I have determined the best pipeline for building my model, I would like to apply the same methodology on a dataset of app-reviews webscraped from Google's Playstore or Apple's App Store. 
