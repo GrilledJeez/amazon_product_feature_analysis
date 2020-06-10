@@ -30,7 +30,7 @@ I chose to focus my analysis on a microwave after being inspired by Jack Donaghy
 
 I selected the Panasonic 2.2 Cu. Ft. 1250 W/ Genius Sensor Countertop/Built-In Microwave Oven with Inverter Technology because it had the most reviews of an microwave in my chosen dataset.
 
-![image](https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/panasonic_microwave.png =400x)
+![image](https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/panasonic_microwave.jpg)
 Panasonic Microwave
    <br><br><br>
 
