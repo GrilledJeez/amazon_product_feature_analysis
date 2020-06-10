@@ -77,7 +77,7 @@ Within my model I decided to initialize with 'nndsvda', setting 'mu' as my solve
 
 Once I ran the model and clustered our words into our five different topics, I saw the following result. I inferred the topic labels for my categories. There are some words (highlighted in red) that do not match well with the theme for the category, but this is the nature and the problem when using unsupervised learning.
 
-![image](https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/keywords)
+![image](https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/keywords.png)
 
 Top Keywords and Labeled Topics
    <br><br><br>
