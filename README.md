@@ -31,7 +31,6 @@ I chose to focus my analysis on a microwave after being inspired by Jack Donaghy
 I selected the Panasonic 2.2 Cu. Ft. 1250 W/ Genius Sensor Countertop/Built-In Microwave Oven with Inverter Technology because it had the most reviews of an microwave in my chosen dataset.
 
 ![image](https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/panasonic_microwave.jpg)
-
 Panasonic Microwave
    <br><br><br>
 
@@ -48,7 +47,6 @@ Data Highlights
 ## Workflow
 
 ![image](https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/technology_stack.png)
-
 Technology Stack
    <br><br><br>
 
@@ -65,7 +63,6 @@ I used GENSIM's NMF model and Coherence Score function to determine the best hyp
 Some of the outputted coherence scores scored higher than these combinations. However, I went with these inplace of other combinations with higher scores as this combination provided the most inferences while holding the highest similarity amongst associated keywords within my different topics.
 
 ![image](https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/coherence_score.png)
-
 Coherence Scoring
    <br><br><br>
 
@@ -78,7 +75,6 @@ Within my model I decided to initialize with 'nndsvda', setting 'mu' as my solve
 Once I ran the model and clustered our words into our five different topics, I saw the following result. I inferred the topic labels for my categories. There are some words (highlighted in red) that do not match well with the theme for the category, but this is the nature and the problem when using unsupervised learning.
 
 ![image](https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/keywords.png)
-
 Top Keywords and Labeled Topics
    <br><br><br>
 
@@ -88,14 +84,12 @@ Top Keywords and Labeled Topics
 Upon completing my model I used softmax (a heuristic that converts arbitrary positive values into probabilities) to source arrays within my NMF model's W matrix then assign a probability for an existing relationship between each of my reviews and each of my topics. 
 
 ![image](https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/categorized_review.png)
-
 Technology Stack
    <br><br><br>
 
 Once I had a relationship probability for every review with each topic, I summed the probabilities for every category and divided the sum by the total reviews in my dataframe. This resulted in my final ranking and prioritization for my topics (product features). 
 
 ![image](https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/product_features.png)
-
 Product Featurs Ranked & Prioritized
    <br><br><br>
 
@@ -104,12 +98,10 @@ Additionally I performed some spot checks on randomly selected reviews to determ
 Below are two. In the first the customer complained about a malfunctioning door which was a common complaint as revealed by our model. In the second we see the review categorized in the 'Size' topic, but there is no mention of the size of the microwave. Additionally in the second review we see the customer reference the lifetime and power of the microwave, but neither of these registered with the categorization. 
 
 ![image](https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/good_categorization.png)
-
 Model Categorizing Well
    <br><br><br>
 
 ![image](https://github.com/GrilledJeez/amazon_product_feature_analysis/blob/master/images/bad_categorization.png)
-
 Model Categorizing Poorly
    <br><br><br>
 
